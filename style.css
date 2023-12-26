@@ -1,0 +1,122 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    width: 500px;
+    height: 700px;
+    background-color: #eee;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.inputCont{
+        background-color: #ddd;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px -5.7px 20px 0px
+
+}
+.input{
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #888888;
+    padding-left: 10px;
+    outline: none;
+    font-size: 20px;
+
+}
+.Button{
+    width: 13%;
+    background-color: orange;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    /* font-weight: bold; */
+    border-radius: 5px;
+
+}
+.appendix{
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+}
+
+/* tsak style */
+
+.task{
+    display: flex;
+    background-color: white;
+    justify-content: space-between; 
+    padding: 0 10px 0 20px; 
+    align-items: center; 
+    border-radius: 5px;
+
+}
+.class-cont{
+    font-size: 20px; 
+    /* margin-left: 10px; */
+}
+
+.task-del-btn{
+    background-color: orange; 
+    border: none; 
+    outline: none; 
+    padding: 10px; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+.task-btn:hover,
+.Button:hover{
+    background-color: rgb(225, 147, 0);
+    transition: .2s;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .Button{
+        font-size: 10px;
+    }
+    .main{
+        width: 300px;
+        height: 500px;
+    }
+    .inputCont{
+        padding: 15px;
+    }
+    .input{
+        height: 25px;
+        font-size: 16px;
+    }
+    .appendix{
+        gap: 5px;
+        padding: 20px 10px;
+    }
+
+    .task{ 
+        padding: 0 5px 0 10px;
+        height: 45px; 
+    }
+    .class-cont{
+        font-size: 14px; 
+    }
+    
+    .task-del-btn{
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    
+}
